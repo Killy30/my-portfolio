@@ -1,0 +1,41 @@
+{
+    "projects":[
+        {
+            "title": "Sistema de punto de venta",
+            "description": "Es un sistema de ventas para cobros de facturas, análisis de ventas, historial de ventas y mucho mas.",
+            "img":"/img/systempop.png",
+            "link":"https://github.com/Killy30/sistema-de-ventas",
+            "technologies":["HTML", "CSS", "JavaScript", "Nodejs", "MongoBD"]
+        },
+        {
+            "title": "Chat",
+            "description": "Es un chat creado con socket.io y JavaScript donde puedes enviar un mensaje atreves del número de 'contacto' de la otra persona",
+            "img":"/img/chat.png",
+            "link":"https://github.com/Killy30/chat",
+            "technologies":["HTML", "CSS", "JavaScript","Socket.io", "Nodejs", "MongoBD"]
+        }
+    ],
+
+    "skills":[
+        {"name":"JavaScript", "logo": "JavaScript-logo.png"},
+        {"name":"Nodejs", "logo": "nodejs.png"},
+        {"name":"MongoDB", "logo": "mongodb.png"},
+        {"name":"HTML", "logo": "html.png"},
+        {"name":"CSS", "logo": "css.png"},
+        {"name":"React", "logo": "react_logo.png"}
+    ],
+
+    "about": "Desde el año 2018 he empezado en la programación tomando una carrera como ingeniero de software en un instituto tecnológico, debido a la pandemia no pude terminar esa carrera, pero durante este tiempo he fortalecido mis habilidades como desarrollador tomando cursos online, leyendo documentos y creado proyectos propios.",
+    
+    "introduction": "Desarrollador Full-Stack apasionado por la programación y el desarrollo de aplicaciones con alta calidad, seguro y escalable.",
+
+    
+    "contacts": {
+        "email": "killycenecharles30@gmail.com",
+        "github": "https://github.com/Killy30",
+        "linkedin": "https://www.linkedin.com/in/rhack-killy-cenecharles-701b3b1b3/",
+        "cv": "https://drive.google.com/file/d/1Qvm6pXABGRL2nLFZKVc9V3JKo5giUeSf/view",
+        "footer": "Altos márgenes de responsabilidad Disposición para personal de confianza y comunicativa, aplicar conocimientos teóricos y prácticos aprendidos durante mi formación académica en el instituto y cursos técnicos con el fin de beneficiar a la organización y desarrollarme de forma profesional y personal."
+    }
+
+}
