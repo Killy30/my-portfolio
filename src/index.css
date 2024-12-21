@@ -21,13 +21,10 @@
 
 body {
   display: flex;
-  /* place-items: center; */
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #172026;
-  
+  background-color: #e4e4e4;
   position: relative;
 }
+
 html{
   scroll-behavior: smooth;
 }
@@ -145,4 +142,12 @@ html{
 
 .btn_download_cv:hover .button_lg::after {
   background-color: #fff;
+}
+
+
+@media (max-width: 640px) {
+  body {
+    /* display: initial;
+    width: 100%; */
+  }
 }
