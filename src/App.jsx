@@ -5,7 +5,6 @@ import About from './components/about'
 import Projects from './components/projects'
 import Skills from './components/skills'
 import Contact from './components/contact'
-import cors from 'cors'
 import './App.css'
 
 function App() {
@@ -15,10 +14,6 @@ function App() {
     skills:[],
     contacts:{}
   })
-  
-  
-  const URL = 'https://drive.google.com/file/d/17sRo8RqJiqlvyf4OgoYffPoLyOD_ghPj/view?usp=drive_link'
-  const CORS ='https://cors-anywhere.herokuapp.com/'
 
   useEffect(()=>{
     fetch('../data/dataPortafolio.json')
