@@ -10,9 +10,22 @@ function ProjectCard({data}){
                     <img src={img} alt="" />
                 </div>
             </div>
-            <div>
-                <div><h4>{title}</h4></div>
-                <div><p>{description}</p></div>
+            <div className="card_proj_desc">
+                <div>
+                    <div><h4>{title}</h4></div>
+                    <div><p>{description}</p></div>
+                    <div className="tech">
+                        {
+                            technologies.map(item => {
+                                return(
+                                    <div className="techItem">
+                                        <p>{item}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
                 <div className="btnCode">
                     <a href={link} target="_blank">
                         <div className="btngithub">
@@ -20,17 +33,6 @@ function ProjectCard({data}){
                         </div>
                         <span>Codigo</span>  
                     </a>
-                </div>
-                <div className="tech">
-                    {
-                        technologies.map(item => {
-                            return(
-                                <div>
-                                    <p>{item}</p>
-                                </div>
-                            )
-                        })
-                    }
                 </div>
             </div>
         </div>

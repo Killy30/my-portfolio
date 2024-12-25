@@ -220,34 +220,30 @@ nav ul li a:hover{
   place-content: center;
 }
 .boxProjects{
-  width: 90%;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding:30px;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 .cardProject{
-  /* width: 40%; */
-  /* height: 400px; */
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 10px;
   background-color: #222d35;
-  
+  overflow: hidden;
 }
 .cardImg{
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 250px;
 }
 .imgPrjCard{
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   overflow: hidden;
   margin-bottom: 15px;
   position: absolute;
   transition: all .3s;
 }
-
 .imgPrjCard img{
   width: 100%;
   height: 100%;
@@ -255,32 +251,44 @@ nav ul li a:hover{
 }
 .imgPrjCard:hover{
   transform: scale(1.1);
-
+}
+.card_proj_desc{
+  padding: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: calc(100% - 250px);
 }
 .cardProject h4{
-  text-align: center;
   color: #53eeff;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 500;
 }
 .cardProject p{
-  text-align: center;
   color: #fff;
+  font-size: 16px;
+  font-weight: 300;
 }
+.tech{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+.techItem{
+  padding: 2px 15px;
+  background-color: #00e5ff79;
+  border-radius: 20px;
+}
+.techItem p{
+  font-size: 14px;
+}
+
 .btnCode{
+  width: 100%;
   display: flex;
-  place-content: center;
-  margin: 10px 0px;
-}
-.btnCode a{
-  /* text-decoration: none;
-  padding: 5px 30px;
-  background-color: #fff;
-  border-radius: 7px;
-  color: #0f171c;
-  margin: 10px 0px;
-  display: flex;
-  align-items: center; */
+  margin-top: 25px;
+  align-self: flex-end;
 }
 .btngithub{
   width: 20px;
@@ -292,11 +300,6 @@ nav ul li a:hover{
   height: 100%;
   object-fit: contain;
 }
-.tech{
-  display: flex;
-  justify-content: space-around;
-}
-
 .btnCode a {
   display: inline-flex;
   border-radius: 7px;
@@ -307,12 +310,10 @@ nav ul li a:hover{
   padding: 1px 30px;
   width: 170px;
   cursor: pointer;
-  margin: 10px 0px;
   text-decoration: none;
   transition: all 0.5s;
   border: 2px solid #fff;
 }
- 
 .btnCode a span {
   cursor: pointer;
   display: inline-block;
@@ -557,7 +558,7 @@ nav ul li a:hover{
   }
 
   .projects{
-    padding: 80px 20px;
+    padding: 80px 0px;
   }
   .boxProjects{
     width: 100%;

@@ -1,18 +1,25 @@
 {
     "projects":[
         {
+            "title": "Chat",
+            "description": "Es un chat creado con socket.io y JavaScript donde puedes enviar un mensaje atreves del número de 'contacto' de la otra persona",
+            "img":"/img/touch3.jpg",
+            "link":"https://github.com/Killy30/chat",
+            "technologies":["HTML", "CSS", "JavaScript","Socket.io", "Nodejs", "MongoBD"]
+        },
+        {
             "title": "Sistema de punto de venta",
             "description": "Es un sistema de ventas para cobros de facturas, análisis de ventas, historial de ventas y mucho mas.",
-            "img":"/img/systempop.png",
+            "img":"/img/touch1.jpg",
             "link":"https://github.com/Killy30/sistema-de-ventas",
             "technologies":["HTML", "CSS", "JavaScript", "Nodejs", "MongoBD"]
         },
         {
-            "title": "Chat",
-            "description": "Es un chat creado con socket.io y JavaScript donde puedes enviar un mensaje atreves del número de 'contacto' de la otra persona",
-            "img":"/img/chat.png",
-            "link":"https://github.com/Killy30/chat",
-            "technologies":["HTML", "CSS", "JavaScript","Socket.io", "Nodejs", "MongoBD"]
+            "title": "Api convert binary",
+            "description": "Esta es una API que puede convertir un código binario en texto, recibe el byte completo y devuelve el carácter.",
+            "img":"/img/touch2.jpg",
+            "link":"https://github.com/Killy30/api-convert-binaryToText",
+            "technologies":["Python", "Flask"]
         }
     ],
 
