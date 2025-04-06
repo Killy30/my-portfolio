@@ -8,6 +8,20 @@
             "technologies":["HTML", "CSS", "JavaScript","Socket.io", "Nodejs", "MongoBD"]
         },
         {
+            "title": "Icommerce server",
+            "description": "Este es la parte del servidor, tiene un sistema de login y un API donde manda los datos hacia el front-end.",
+            "img":"/img/touch2.jpg",
+            "link":"https://github.com/Killy30/icommerce_server",
+            "technologies":["Nodejs", "MongoBD", "Jwt", "Expressjs"]
+        },
+        {
+            "title": "Icommerce front-end",
+            "description": "Este es la parte de front-end donde puede ver producto agregar en carrito guardar comprar y con muchas funcionalidades mas.",
+            "img":"/img/touch4.jpg",
+            "link":"https://github.com/Killy30/icommerce_frontend",
+            "technologies":["React", "HTML", "CSS", "JavaScript"]
+        },
+        {
             "title": "Sistema de punto de venta",
             "description": "Es un sistema de ventas para cobros de facturas, análisis de ventas, historial de ventas y mucho mas.",
             "img":"/img/touch1.jpg",

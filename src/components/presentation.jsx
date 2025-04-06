@@ -6,7 +6,7 @@ function Presentation() {
             <div className="containPr">
                 <div className="text-name">
                     <div>
-                        <div>    
+                        <div className="hpxx">    
                             <h1>Hola, Soy Killy</h1>
                             <p>Sor un Desarrollador Full-Stack apasionado por la programación y el desarrollo de aplicaciones con alta calidad, seguro y escalable.</p>
                         </div>
