@@ -1,8 +1,17 @@
+import { useEffect } from "react"
 
 
-function ProjectCard({data}){
+function ProjectCard({data, listCards}){
     const {title, description, img, link, technologies} = data
     
+    useEffect(()=>{
+        const card_project = document.querySelectorAll('.cardProject')
+        const addListCard = () =>{
+            listCards(card_project)
+        }
+        addListCard()
+    },[])
+
     return(
         <div className="cardProject">
             <div className="cardImg">
@@ -16,9 +25,9 @@ function ProjectCard({data}){
                     <div><p>{description}</p></div>
                     <div className="tech">
                         {
-                            technologies.map(item => {
+                            technologies.map((item, i) => {
                                 return(
-                                    <div className="techItem">
+                                    <div className="techItem" key={i}>
                                         <p>{item}</p>
                                     </div>
                                 )

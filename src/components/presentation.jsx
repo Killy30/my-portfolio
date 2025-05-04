@@ -4,6 +4,11 @@ function Presentation() {
     return(
         <section id="section-1" className="presentation">
             <div className="containPr">
+                <div className="myphoto">
+                    <div className="img">
+                        <img src="../../img/myphoto.jpeg" alt="" />
+                    </div>
+                </div>
                 <div className="text-name">
                     <div>
                         <div className="hpxx">    
@@ -21,11 +26,6 @@ function Presentation() {
                             </div>
                             <Links/>
                         </div>
-                    </div>
-                </div>
-                <div className="myphoto">
-                    <div className="img">
-                        <img src="../../img/myphoto.jpeg" alt="" />
                     </div>
                 </div>
             </div>

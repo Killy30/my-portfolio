@@ -43,7 +43,10 @@
         {"name":"MongoDB", "logo": "mongodb.png"},
         {"name":"HTML", "logo": "html.png"},
         {"name":"CSS", "logo": "css.png"},
-        {"name":"React", "logo": "react_logo.png"}
+        {"name":"React", "logo": "react_logo.png"},
+        {"name":"Git", "logo": "git.png"},
+        {"name":"Github", "logo": "github_logo.png"},
+        {"name":"Bootstrap", "logo": "bootstrap.png"}
     ],
 
     "about": "Desde el año 2018 he empezado en la programación tomando una carrera como ingeniero de software en un instituto tecnológico, debido a la pandemia no pude terminar esa carrera, pero durante este tiempo he fortalecido mis habilidades como desarrollador tomando cursos online, leyendo documentos y creado proyectos propios.",

@@ -1,17 +1,70 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ProjectCard from "./projectCard"
 
 
+// const card_project = document.querySelectorAll('.cardProject')
 
 function Projects({projects}) {
+    
+    const [cards, setCards] = useState([])
+    const [scrollCardPrev, setScrollCardPrev] = useState(-450)
+    const [scrollCardNext, setScrollCardNext] = useState(450)
+    let [positionx, setPositionx] = useState(0)
 
-    const nextMoveRihgt = () =>{
-        document.querySelector('.list_slide').scrollBy({left: 357 , behavior: 'smooth'})
+    const setListCard = (listCard) => {
+        setCards(listCard)
+    }
+
+    const previousMoveLeft = (e) =>{
+        e.preventDefault()
+        let boxWidth = document.querySelector('.center_classxx').offsetWidth;
+
+        if(positionx <= 1){
+            setScrollCardNext(160)
+        }else{
+            setScrollCardPrev(-450)
+        }
+        
+        if(positionx != 0){
+            document.querySelector('.list_slide').scrollBy({left: scrollCardPrev , behavior: 'smooth'})
+            setPositionx(positionx--)
+            cardSelected()
+            setPositionx(positionx--)
+        }
+    }
+
+    const nextMoveRihgt = (e) =>{
+        e.preventDefault()
+
+        if(positionx >= cards.length - 2){
+            setScrollCardPrev(-160)
+        }else{
+            setScrollCardNext(450)
+        }
+
+        if(positionx < cards.length - 1){
+            document.querySelector('.list_slide').scrollBy({left: scrollCardNext , behavior: 'smooth'})
+            setPositionx(positionx++)
+            cardSelected()
+            setPositionx(positionx++)
+        }
+    }
+
+    const cardSelected = () =>{
+        cards.forEach((item, i) => {
+            item.classList.remove('scaleCardProject')
+        })
+
+        const selected = cards[positionx]
+        selected?.classList.add('scaleCardProject')
     }
     
-    const previousMoveLeft = () =>{
-        document.querySelector('.list_slide').scrollBy({left: -357 , behavior: 'smooth'})
-    }
+    useEffect(()=>{
+        setPositionx(1)
+        document.querySelector('.list_slide').scrollBy({left: 160 , behavior: 'smooth'})
+        cards[positionx]?.classList.add('scaleCardProject')
+    },[cards])
+
     
     return (
         <section id="section-3" className="projects">
@@ -27,8 +80,8 @@ function Projects({projects}) {
                         <div className="list_slide">
                             <div className="cards_slide">
                                 {
-                                    projects.map(item =>{
-                                        return <ProjectCard data={item} />
+                                    projects.map((item, i) =>{
+                                        return <ProjectCard data={item} listCards={setListCard} key={i}/>
                                     })
                                 }
                             </div>

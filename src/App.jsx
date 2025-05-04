@@ -22,7 +22,6 @@ function App() {
       setData(datas)
     })
   },[])
-  console.log(data);
   
   return (
     <>
